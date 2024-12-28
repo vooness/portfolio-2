@@ -1,7 +1,11 @@
 "use client";
 
 import React, { useState } from "react";
-import { FaFacebook, FaTwitter, FaLinkedin, FaEnvelope, FaPhone } from "react-icons/fa"; // Ikony sociálních sítí a kontaktu
+import {
+  FaLinkedin,
+  FaEnvelope,
+  FaPhone,
+} from "react-icons/fa";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -18,18 +22,18 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         {/* Hlavní grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          {/* Sekce Rychlé odkazy */}
+          {/* 1) Sekce (zleva první): Odkazy */}
           <div>
             <h4 className="text-lg font-bold text-white mb-4">Rychlé odkazy</h4>
             <ul className="space-y-2">
               <li>
                 <a href="#about" className="hover:text-blue-400 transition">
-                  O nás
+                  O mně
                 </a>
               </li>
               <li>
-                <a href="#courses" className="hover:text-blue-400 transition">
-                  Kurzy
+                <a href="#collab" className="hover:text-blue-400 transition">
+                  Spolupráce
                 </a>
               </li>
               <li>
@@ -38,69 +42,60 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#contact" className="hover:text-blue-400 transition">
-                  Kontakt
+                <a href="#ai" className="hover:text-blue-400 transition">
+                  Umělá inteligence
+                </a>
+              </li>
+              <li>
+                <a href="#tools" className="hover:text-blue-400 transition">
+                  AI nástroje
                 </a>
               </li>
             </ul>
           </div>
 
-          {/* Sekce Sociální sítě + Kontakt */}
+          {/* 2) Prostřední sekce: Kontakty (LinkedIn, mail, telefon) */}
           <div>
-            <h4 className="text-lg font-bold text-white mb-4">Sledujte nás</h4>
-            <div className="flex space-x-4 mb-4">
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-blue-500 text-2xl transition"
-              >
-                <FaFacebook />
-              </a>
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-blue-500 text-2xl transition"
-              >
-                <FaTwitter />
-              </a>
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-blue-500 text-2xl transition"
-              >
-                <FaLinkedin />
-              </a>
-            </div>
-            <ul className="space-y-2">
+            <h4 className="text-lg font-bold text-white mb-4">Kontakt</h4>
+            <ul className="space-y-4">
+              {/* LinkedIn */}
+              <li className="flex items-center gap-3">
+                <FaLinkedin className="text-blue-400 text-xl" />
+                <a
+                  href="https://www.linkedin.com/in/vas-profil/" // Upravte si URL
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-blue-400 transition"
+                >
+                  LinkedIn
+                </a>
+              </li>
+              {/* E-mail */}
               <li className="flex items-center gap-3">
                 <FaEnvelope className="text-blue-400 text-xl" />
                 <a
-                  href="mailto:info@ai-skoleni.cz"
+                  href="mailto:XY@XY.cz"
                   className="hover:text-blue-400 transition"
                 >
-                  info@ai-skoleni.cz
+                  XY@XY.cz
                 </a>
               </li>
+              {/* Telefon */}
               <li className="flex items-center gap-3">
                 <FaPhone className="text-blue-400 text-xl" />
                 <a
-                  href="tel:+420123456789"
+                  href="tel:+728788824"
                   className="hover:text-blue-400 transition"
                 >
-                  +420 123 456 789
+                  +728 788 824
                 </a>
               </li>
             </ul>
           </div>
 
-          {/* Sekce Formulář */}
+          {/* 3) Pravý blok: formulář (Ozvu se) */}
           <div>
-            <h4 className="text-lg font-bold text-white mb-4">
-              Zanechte nám e-mail
-            </h4>
+            <h4 className="text-lg font-bold text-white mb-4">Ozvu se</h4>
             {!submitted ? (
               <form onSubmit={handleSubmit} className="space-y-4">
                 <input
@@ -119,8 +114,8 @@ const Footer = () => {
                 </button>
               </form>
             ) : (
-              <p className="text-blue-400">
-                Děkujeme! Brzy se vám ozveme.
+              <p className="text-blue-400 text-lg font-bold">
+                Co nevidět se spojíme!
               </p>
             )}
           </div>

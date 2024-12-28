@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 
 type Tool = {
   name: string;
@@ -11,6 +11,7 @@ type Tool = {
   link: string;
 };
 
+// Kompletní seznam nástrojů
 const tools: Tool[] = [
   {
     name: "Remove.BG",
@@ -195,23 +196,27 @@ const tools: Tool[] = [
 ];
 
 const AiToolsGrid: React.FC = () => {
+  const [expanded, setExpanded] = useState(false);
+
+  const visibleTools = expanded ? tools : tools.slice(0, 3);
+
   return (
     <section className="bg-gray-900 text-white py-16">
-      <div className="container mx-auto px-6">
-        <h2 className="text-5xl font-bold text-left text-blue-500 mb-12">
-          30 Užitečných AI Nástrojů
+      <div className="container mx-auto px-4">
+        <h2 className="text-4xl font-bold text-left text-blue-500 mb-8">
+          20 Užitečných AI Nástrojů
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {tools.map((tool, index) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {visibleTools.map((tool, index) => (
             <div
               key={index}
               className="rounded-lg bg-gradient-to-b from-gray-800 to-gray-900 shadow-lg p-6 flex flex-col justify-between"
             >
               <img
-  src={tool.icon}
-  alt={tool.name}
-  className="w-16 h-16 mb-4 border-2 border-blue-500 rounded-full p-1"
-/>
+                src={tool.icon}
+                alt={tool.name}
+                className="w-16 h-16 mb-4 border-2 border-blue-500 rounded-full p-1"
+              />
               <h3 className="text-xl font-semibold text-blue-400">{tool.name}</h3>
               <p className="text-sm text-gray-300 mt-2">{tool.description}</p>
               <p className="text-sm text-gray-400 mt-2">
@@ -230,6 +235,14 @@ const AiToolsGrid: React.FC = () => {
               </a>
             </div>
           ))}
+        </div>
+        <div className="mt-8 text-center">
+          <button
+            onClick={() => setExpanded(!expanded)}
+            className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-md transition"
+          >
+            {expanded ? "Zavřít" : "Zobrazit více"}
+          </button>
         </div>
       </div>
     </section>

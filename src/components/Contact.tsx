@@ -2,6 +2,8 @@
 
 import React, { useRef, useEffect } from "react";
 import * as THREE from "three";
+// 1) Import bílých ikon z React Icons (fa)
+import { FaRegLightbulb, FaChartBar, FaRobot } from "react-icons/fa";
 
 const ContactForm: React.FC = () => {
   const bgRef = useRef<HTMLDivElement | null>(null);
@@ -81,8 +83,10 @@ const ContactForm: React.FC = () => {
         ref={bgRef}
         className="absolute top-0 left-0 w-full h-full pointer-events-none z-0"
         style={{
-          maskImage: "linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1), rgba(0,0,0,0))",
-          WebkitMaskImage: "linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1), rgba(0,0,0,0))",
+          maskImage:
+            "linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1), rgba(0,0,0,0))",
+          WebkitMaskImage:
+            "linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1), rgba(0,0,0,0))",
         }}
       ></div>
 
@@ -90,30 +94,32 @@ const ContactForm: React.FC = () => {
       <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
         {/* Levá strana: Obsah */}
         <div className="space-y-6">
-          <h2 className="text-4xl font-bold text-blue-500">
-            Implementujte AI do vašeho podnikání
+          <h2 className="text-5xl font-bold text-blue-500">
+            AI: Kolega, co nechodí na kafe.
           </h2>
           <p className="text-gray-400">
-            Chcete zvýšit efektivitu vašeho podnikání pomocí umělé inteligence?
-            Naučíme vás, jak zavést AI do vašich firemních procesů. Vyplňte
-            formulář a získejte bezplatnou konzultaci.
+            AI není o tom, že by nás měla nahradit, ale krýt záda. Ušetřit čas, poradit a
+            inspirovat. Žádné složitosti, žádné přednášky – jen praktická pomoc, která tu bude 24/7.
           </p>
           <ul className="space-y-4">
             <li className="flex items-center space-x-4">
               <span className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white">
-                💡
+                {/* 2) Nahrazeno FaRegLightbulb ikonou  */}
+                <FaRegLightbulb className="text-white" />
               </span>
               <span>Strategie implementace AI</span>
             </li>
             <li className="flex items-center space-x-4">
               <span className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white">
-                📊
+                {/* 3) Nahrazeno FaChartBar ikonou */}
+                <FaChartBar className="text-white" />
               </span>
-              <span>Optimalizace firemních procesů</span>
+              <span>Kreativní využití AI</span>
             </li>
             <li className="flex items-center space-x-4">
               <span className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white">
-                🤖
+                {/* 4) Nahrazeno FaRobot ikonou */}
+                <FaRobot className="text-white" />
               </span>
               <span>Automatizace úkolů s AI</span>
             </li>
@@ -122,9 +128,7 @@ const ContactForm: React.FC = () => {
 
         {/* Pravá strana: Formulář */}
         <div className="bg-gray-800 p-8 rounded-lg shadow-lg">
-          <h3 className="text-2xl font-bold mb-6 text-white">
-            Kontaktujte mě
-          </h3>
+          <h3 className="text-5xl font-bold mb-6 text-white">Spojíme se?</h3>
           <form className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>

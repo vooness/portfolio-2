@@ -10,12 +10,11 @@ const Aibussines: React.FC = () => {
       <div className="container mx-auto px-6 text-center">
         {/* Nadpis */}
         <h2 className="text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 mb-12">
-          AI pro váš byznys
+        Proč se seznámit s AI?
         </h2>
         <p className="text-gray-300 text-lg max-w-2xl mx-auto mb-8">
-          Umělá inteligence otevírá dveře k novým příležitostem, rychlejšímu
-          růstu a lepším výsledkům. Umožní vám inovovat, lépe rozumět svým
-          zákazníkům a získat konkurenční náskok na trhu.
+        „AI za vás všechnu práci neudělá, ale může být skvělým pomocníkem, když jí dáte
+        šanci. Nemusíte to být hned na profi úrovni – stačí se s ní jen trochu skamarádit.”
         </p>
 
         <div className="relative overflow-hidden rounded-lg shadow-lg mb-16 max-w-[1000px] w-full mx-auto">
@@ -35,33 +34,33 @@ const Aibussines: React.FC = () => {
         {/* Oddělovací čára */}
         <div className="h-1 bg-gradient-to-r from-blue-500 to-blue-300 w-24 mx-auto mb-12"></div>
 
-        {/* Grid s kartami */}
-        <div className="grid md:grid-cols-2 gap-10 max-w-4xl mx-auto">
-          {[
-            {
-              icon: <FaRocket className="text-blue-500 text-6xl" />,
-              title: "Rychlejší růst",
-              description:
-                "Implementace AI zefektivňuje provoz, šetří čas a umožňuje růst bez navyšování nákladů.",
-            },
-            {
-              icon: <FaUsers className="text-blue-500 text-6xl" />,
-              title: "Lepší zákaznická zkušenost",
-              description:
-                "S AI můžete personalizovat nabídky, zlepšit podporu a lépe předvídat potřeby svých klientů.",
-            },
-            {
-              icon: <FaRegLightbulb className="text-blue-500 text-6xl" />,
-              title: "Inovace a strategie",
-              description:
-                "Prediktivní analýzy a automatizace vám pomohou činit lepší rozhodnutí a objevovat nové trhy.",
-            },
-            {
-              icon: <FaMoneyBillWave className="text-blue-500 text-6xl" />,
-              title: "Optimalizace nákladů",
-              description:
-                "Snížení provozních výdajů díky efektivnější alokaci zdrojů a chytřejšímu plánování.",
-            },
+     {/* Grid s kartami */}
+<div className="grid md:grid-cols-2 gap-10 max-w-4xl mx-auto">
+  {[
+    {
+      icon: <FaRocket className="text-blue-500 text-6xl" />,
+      title: "Rychlejší progress!",
+      description:
+        "„AI zvládne splnit nudné úkoly, co berou spoustu času. My se díky tomu můžeme soustředit na kreativní činnosti.“",
+    },
+    {
+      icon: <FaUsers className="text-blue-500 text-6xl" />,
+      title: "Jít s dobou",
+      description:
+        "„AI se velmi pravděpodobně brzy stane ‚must have‘ dovedností. Čím déle čekáme na seznámení s AI, tím těžší to bude.“",
+    },
+    {
+      icon: <FaRegLightbulb className="text-blue-500 text-6xl" />,
+      title: "Inovace a strategie",
+      description:
+        "„AI neřekne, co přesně dělat. Ale může nám ukázat, kde jsou možnosti, které nemusely být zřejmé.“",
+    },
+    {
+      icon: <FaMoneyBillWave className="text-blue-500 text-6xl" />,
+      title: "Časová úspora",
+      description:
+        "„Místo 3 hodin to zvládla za 45 minut.“",
+    },
           ].map((item, index) => (
             <motion.div
               key={index}
