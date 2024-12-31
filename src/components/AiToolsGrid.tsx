@@ -11,8 +11,36 @@ type Tool = {
   link: string;
 };
 
-// Kompletní seznam nástrojů
+// Kompletní seznam nástrojů (ChatGPT, Canva AI, MidJourney jsou nyní na začátku)
 const tools: Tool[] = [
+  {
+    name: "ChatGPT",
+    icon: "/icons/chatgpt.png",
+    description:
+      "Pokročilý AI chatbot pro přirozené rozhovory a generování textu.",
+    price: "Zdarma / Prémiové plány od $20 měsíčně",
+    purpose: "Chatbot a generování obsahu",
+    link: "https://chat.openai.com/",
+  },
+  {
+    name: "Canva AI",
+    icon: "/icons/canva.svg",
+    description:
+      "Navrhování grafiky pomocí AI. Vytvářejte bannery, příspěvky a prezentace snadno a rychle.",
+    price: "Zdarma / Pro plán od $12 měsíčně",
+    purpose: "Grafický design",
+    link: "https://www.canva.com/",
+  },
+  {
+    name: "MidJourney",
+    icon: "/icons/midjourney.png",
+    description:
+      "Generátor umění na základě AI. Vytvářejte originální umělecká díla s minimálním úsilím.",
+    price: "Od $10 měsíčně",
+    purpose: "Tvorba umění",
+    link: "https://www.midjourney.com/",
+  },
+  // Zbytek nástrojů zůstává ve stejném pořadí
   {
     name: "Remove.BG",
     icon: "/icons/bgremove.png",
@@ -30,15 +58,6 @@ const tools: Tool[] = [
     price: "Zdarma / Prémiové plány od $10 měsíčně",
     purpose: "Chatbot a analýzy",
     link: "https://www.anthropic.com/",
-  },
-  {
-    name: "MidJourney",
-    icon: "/icons/midjourney.png",
-    description:
-      "Generátor umění na základě AI. Vytvářejte originální umělecká díla s minimálním úsilím.",
-    price: "Od $10 měsíčně",
-    purpose: "Tvorba umění",
-    link: "https://www.midjourney.com/",
   },
   {
     name: "Opus.pro",
@@ -75,15 +94,6 @@ const tools: Tool[] = [
     price: "Od $12 měsíčně",
     purpose: "Úprava videí",
     link: "https://runwayml.com/",
-  },
-  {
-    name: "Canva AI",
-    icon: "/icons/canva.svg",
-    description:
-      "Navrhování grafiky pomocí AI. Vytvářejte bannery, příspěvky a prezentace snadno a rychle.",
-    price: "Zdarma / Pro plán od $12 měsíčně",
-    purpose: "Grafický design",
-    link: "https://www.canva.com/",
   },
   {
     name: "Copy.ai",

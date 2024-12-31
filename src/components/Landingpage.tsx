@@ -67,7 +67,7 @@ const LandingPage = () => {
         {/* Buttons */}
         <div className="flex justify-center space-x-4">
           <a
-            href="#ai-skoleni"
+            href="#blog"
             className="bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition duration-200 shadow-lg transform hover:scale-105"
           >
             Více o AI →

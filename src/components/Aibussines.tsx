@@ -9,12 +9,12 @@ const Aibussines: React.FC = () => {
     <section id="intelligence" className="bg-gray-900 text-white py-24">
       <div className="container mx-auto px-6 text-center">
         {/* Nadpis */}
-        <h2 className="text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 mb-12">
+        <h2 className="text-4xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 mb-12">
         Proč se seznámit s AI?
         </h2>
         <p className="text-gray-300 text-lg max-w-2xl mx-auto mb-8">
-        „AI za vás všechnu práci neudělá, ale může být skvělým pomocníkem, když jí dáte
-        šanci. Nemusíte to být hned na profi úrovni – stačí se s ní jen trochu skamarádit.”
+      AI za vás všechnu práci neudělá, ale může být skvělým pomocníkem, když jí dáte
+        šanci. Nemusíte to být hned na profi úrovni – stačí se s ní jen trochu skamarádit.
         </p>
 
         <div className="relative overflow-hidden rounded-lg shadow-lg mb-16 max-w-[1000px] w-full mx-auto">
@@ -41,25 +41,25 @@ const Aibussines: React.FC = () => {
       icon: <FaRocket className="text-blue-500 text-6xl" />,
       title: "Rychlejší progress!",
       description:
-        "„AI zvládne splnit nudné úkoly, co berou spoustu času. My se díky tomu můžeme soustředit na kreativní činnosti.“",
+        "AI zvládne splnit nudné úkoly, co berou spoustu času. My se díky tomu můžeme soustředit na kreativní činnosti.",
     },
     {
       icon: <FaUsers className="text-blue-500 text-6xl" />,
       title: "Jít s dobou",
       description:
-        "„AI se velmi pravděpodobně brzy stane ‚must have‘ dovedností. Čím déle čekáme na seznámení s AI, tím těžší to bude.“",
+        "AI se velmi pravděpodobně brzy stane ‚must have‘ dovedností. Čím déle čekáme na seznámení s AI, tím těžší to bude.",
     },
     {
       icon: <FaRegLightbulb className="text-blue-500 text-6xl" />,
       title: "Inovace a strategie",
       description:
-        "„AI neřekne, co přesně dělat. Ale může nám ukázat, kde jsou možnosti, které nemusely být zřejmé.“",
+        "AI neřekne, co přesně dělat. Ale může nám ukázat, kde jsou možnosti, které nemusely být zřejmé.",
     },
     {
       icon: <FaMoneyBillWave className="text-blue-500 text-6xl" />,
       title: "Časová úspora",
       description:
-        "„Místo 3 hodin to zvládla za 45 minut.“",
+        "Místo 3 hodin to zvládla za 45 minut.",
     },
           ].map((item, index) => (
             <motion.div

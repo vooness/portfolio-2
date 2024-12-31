@@ -140,7 +140,7 @@ export default function CalculatorAI() {
   return (
     <section className="w-full bg-gradient-to-b from-gray-900 to-[#0f172a] py-10">
       <div className="mx-auto max-w-6xl text-white px-4">
-      <h2 className="text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 items-center mb-6   text-center">
+      <h2 className="text-4xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 items-center mb-6   text-center">
           Kalkulačka úspor s AI
           </h2>
 

@@ -32,7 +32,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#collab" className="hover:text-blue-400 transition">
+                <a href="#timeline" className="hover:text-blue-400 transition">
                   Spolupráce
                 </a>
               </li>
@@ -42,7 +42,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#ai" className="hover:text-blue-400 transition">
+                <a href="#aibussines" className="hover:text-blue-400 transition">
                   Umělá inteligence
                 </a>
               </li>
@@ -62,7 +62,7 @@ const Footer = () => {
               <li className="flex items-center gap-3">
                 <FaLinkedin className="text-blue-400 text-xl" />
                 <a
-                  href="https://www.linkedin.com/in/vas-profil/" // Upravte si URL
+                  href="https://www.linkedin.com/in/martin-andrt/" // Upravte si URL
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-blue-400 transition"
@@ -77,7 +77,7 @@ const Footer = () => {
                   href="mailto:XY@XY.cz"
                   className="hover:text-blue-400 transition"
                 >
-                  XY@XY.cz
+                  ai.andrt.martin@gmail.com
                 </a>
               </li>
               {/* Telefon */}
@@ -124,7 +124,7 @@ const Footer = () => {
         {/* Spodní část */}
         <div className="mt-12 border-t border-gray-800 pt-6 text-center text-sm">
           <p className="text-gray-500">
-            &copy; {new Date().getFullYear()} AI Školení. Všechna práva
+            &copy; {new Date().getFullYear()}  Martin Andrt. Všechna práva vyhrazena.
             vyhrazena.
           </p>
         </div>

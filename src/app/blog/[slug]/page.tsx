@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 // Ukázková data článků (pro simulaci reálných dat)
 const blogPosts = [
   {
-    title: "Jak AI mění trh práce",
+    title: "AI šetří desítky hodin měsíčně",
     image: "/imgs/blog1.jpg",
     content: "Tento článek se věnuje tomu, jak umělá inteligence ovlivňuje pracovní trh...",
     slug: "jak-ai-meni-trh-prace",

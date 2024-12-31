@@ -8,7 +8,7 @@ import Link from "next/link"; // Pro odkazy na detail článků
 // Ukázková data článků
 const blogPosts = [
   {
-    title: "Jak AI mění trh práce",
+    title: "AI umí šetřit desítky hodin měsíčně",
     image: "/imgs/blog1.jpg",
     excerpt: "Ponořte se do světa umělé inteligence...",
     slug: "jak-ai-meni-trh-prace",
@@ -38,12 +38,12 @@ const BlogGrid: React.FC = () => {
         <section className="container mx-auto py-16 px-6">
           {/* Modré tlačítko pro návrat */}
           <div className="flex justify-start mb-8">
-            <button
-              onClick={() => history.back()}
-              className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-md transition mt-12"
-            >
-              ← Zpět
-            </button>
+          <button
+  onClick={() => (window.location.href = "/#blog")}
+  className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-md transition mt-12"
+>
+  ← Zpět
+</button>
           </div>
 
           {/* Nadpis stránky */}

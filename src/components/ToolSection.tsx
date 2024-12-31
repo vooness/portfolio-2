@@ -155,7 +155,7 @@ const ToolSection: React.FC = () => {
     <section className="bg-gray-900 text-white py-16">
       <div className="container mx-auto px-6">
         {/* Nadpis */}
-        <h2 className="text-5xl font-bold text-left text-blue-500 mb-4">
+        <h2 className="text-4xl font-bold text-left text-blue-500 mb-4">
           Prozkoumejte AI nástroje
         </h2>
 

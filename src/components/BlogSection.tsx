@@ -15,7 +15,7 @@ type BlogPost = {
 // Ukázková data článků
 const blogPosts: BlogPost[] = [
   {
-    title: "Jak AI mění trh práce",
+    title: "AI šetří desítky hodin měsíčně",
     image: "/imgs/blog1.jpg",
     excerpt: "Ponořte se do světa umělé inteligence...",
     slug: "jak-ai-meni-trh-prace",
@@ -52,7 +52,7 @@ const BlogSection: React.FC = () => {
     <section className="bg-gray-900 text-white py-16">
       <div className="container mx-auto px-6">
         {/* Nadpis sekce */}
-        <h2 className="text-5xl font-bold text-center text-blue-500 mb-12">
+        <h2 className="text-4xl font-bold text-center text-blue-500 mb-12">
           Články a novinky
         </h2>
 
@@ -81,7 +81,7 @@ const BlogSection: React.FC = () => {
                     href={`/blog/${post.slug}`} // Navigace na detail článku
                     className="inline-block bg-blue-500 text-white px-5 py-2 rounded-full text-center font-bold hover:bg-blue-600 transition-colors"
                   >
-                    Přečíst článek
+                    Celý článek
                   </Link>
                 </div>
               </div>

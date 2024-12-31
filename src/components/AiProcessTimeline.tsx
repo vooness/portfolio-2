@@ -47,7 +47,7 @@ const AiProcessTimeline: React.FC = () => {
       {/* Obsah - Vertical Timeline */}
       <div className="relative z-30 container mx-auto">
         <h2 className="text-5xl font-bold text-center text-blue-500 mb-12">
-          Jak to budeme postupovat?
+          Jak  budeme postupovat?
         </h2>
 
         {/* Centrální Video */}
